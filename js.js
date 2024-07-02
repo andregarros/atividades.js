@@ -139,4 +139,16 @@ function calcularCustoViagem(distancia) {
   const custo = calcularCustoViagem(Number(distancia));
   console.log(`O custo total para ir e voltar é: R$ ${custo}`);
   
+  //questao 18
+  function multiplyAntecessors(num) {
+    let result = 1;
+    
+    for (let i = num; i > 0; i--) {
+      result *= i;
+    }
+    
+    return result;
+  }
+  const result = multiplyAntecessors(5);
+console.log(result); // Output: 120 (5 x 4 x 3 x 2 x 1)
 
